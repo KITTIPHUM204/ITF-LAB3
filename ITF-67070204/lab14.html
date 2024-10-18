@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="lab14.css">
+</head>
+<body>
+    <div class="profile" id="profile">
+        <div class="notify">
+            <p>1</p>
+        </div>
+    </div>
+    <h1 id="user">Username, hi</h1>
+    <label>Set username</label><input id="input-name" type="text" ><button onclick="setName">Set</button>
+    <label>Set username</label><input id="input-id" type="text" ><button onclick="setImg">Set</button>
+    
+    <input type ="text">
+    <input type ="text">
+    <button onclick="addRow()">add</button>
+    <table id="table"
+        <tr>
+            <th>name</th>
+            <th>phone</th>
+        </tr>
+    </table>
+
+    <script>
+        const name = document.getElementById("username");
+        const inputName = document.getElementById("input-name");
+        const profile = document.getElementById("profile");
+        const inpurURL = document.getElementById("input-url");
+        const table = document.getElementById("table");
+        
+        function setName(){
+            name.textContent = inputName.value + ", oh";
+            inputName.value = "";
+        }
+        function setImg(){
+            profile.style.backgroundImage = "url("+ inputUrl.value + ")";
+        }
+        function addRow(){
+            const row = document.creatElement("tr");
+            const cell1 = document.creatElement("tr");
+            const cell2 = document.creatElement("tr");
+            cell1.textContent = "hgkjghkhj"
+            cell2.textContent = "1313524"
+            row.appendchild(cell1)
+            row.appendchild(cell2)
+            table.appendchild(row)
+        }
+    </script>
+</body>
